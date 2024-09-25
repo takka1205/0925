@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const PostAction = async (title: string) => {
-  const res = await fetch(`http://localhost:3000/api/post/`, {
+  const res = await fetch(`https://0925-chi.vercel.app/api/post/`, {
     method: "POST",
     body: JSON.stringify({ title }),
     headers: {
